@@ -3,34 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lorin Gaile's Portfolio Website</title>
+    <title>Lorin Gaile | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <a href="index.html"><img src="images/logo_name/LorinGaile_SoftBlush1-removebg-preview.png" class="logo"></a>
-                <div class="nav-links" id="navLinks">
-                    <ul>
-                        <a href="index.html"><li>Home</li></a>
-                        <a href="about.html"><li>About</li></a>
-                        <a href="projects.html"><li>Projects</li></a>
-                        <a href="services.html"><li>Services</li></a>
-                        <a href="contact.html"><li>Contact</li></a>
-                    </ul>
-                </div>
-            </nav>
-            <div class="dashboard-text">
-                <img src="images/dashb_text/hi-removebg-preview.png" class="hi">
-                <img src="images/dashb_text/lorin_gaile-removebg-preview.png" class="name">
-            </div>
-        </div>
-    </div>
+    <div class="layout">
 
-    <!-- <script src="script.js"></script> -->
+        <!-- ======================================== sidebar with picture ========================================== -->
+        
+        <aside class="sidebar">
+            <div class="profile-picture">
+                <img src="images/about_me/self-photo.png" alt="Lorin Gaile DR. Pagdanganan" class="avatar">
+                <h1 class="name">Lorin Gaile DR. Pagdanganan</h1>
+                <span class="role-badge">Web Developer</span>
+                <span class="role-badge">UI/UX Designer</span>
+
+            <hr class="divider">
+
+                <ul class="contact-list">
+                    <div>
+                        <span class="email-icon"><i class="bi bi-envelope"></i></span>
+                        <div>
+                            <p class="label">Email</p>
+                            <p class="value">loringailedr.pagdanganan@gmail.com</p>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </aside>
+
+        
+
+    </div>
+    
 </body>
 </html>
