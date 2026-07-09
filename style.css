@@ -24,9 +24,9 @@ body{
   width: 350px;
   flex-shrink: 0;
   padding: 90px 20px 30px;
-  
 }
 
+/* ============ profile picture ================ */
 .profile-picture {
   background: #463d3f;
   border: 1px solid #c2afb1;
@@ -47,6 +47,7 @@ body{
   border-radius: 50%;
 }
 
+/* ============== name ================ */
 .name {
   font-size: 16px;
   font-weight: 600;
@@ -54,6 +55,7 @@ body{
   margin-top: -35px;
 }
 
+/* ============== role badges under name ================ */
 .role-badge {
   display: inline-block;
   background: #604D53;
@@ -72,6 +74,7 @@ body{
   bottom: -10px;
 }
 
+/* ============== contact list under ng divider ================ */
 .contact-list {
   list-style: none;
   text-align: left;
@@ -84,18 +87,24 @@ body{
   margin-bottom: 10px;
 }
 
+/* =============== email icon ================ */
 .contact-item .email-icon {
   margin-right: 6px;
   margin-left: 5px;
   font-size: 22px;
+  border: 1px solid #c2afb1;
+  border-radius: 5px;
+  padding: 5px 10px;
 }
 
+/* ==== "Email" ==== */
 .contact-item .label {
   font-weight: bold;
   font-size: 12px;
   margin-left: 3px;
 }
 
+/* ==== email address ==== */
 .contact-item .value {
   font-size: 12px;
   border: 1px solid #c2afb1;
@@ -103,14 +112,32 @@ body{
   padding: 0 3px
 }
 
+/* ==== copy icon beside email address ==== */
 .contact-item .copy-icon {
   margin-left: 5px;
   font-size: 16px;
-
-  /* cursor: pointer; */
-  
+  position: relative;
+  top: 9px;
 }
 
+/* ==== div below email ==== */
+.other-contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
 
+.other-contact-item .github-icon {
+  margin-right: 6px;
+  margin-left: 5px;
+  font-size: 22px;
+}
+
+.other-contact-item .linkedin-icon {
+  margin-right: 6px;
+  margin-left: 5px;
+  font-size: 22px;
+}
 
 
