@@ -141,7 +141,7 @@ body{
 }
 
 .main-content {
-  width: 800px;
+  width: 900px;
   flex-shrink: 0;
   padding: 90px 20px 30px;
 }
@@ -153,21 +153,37 @@ nav {
   align-items: center;
   flex-wrap: wrap;
   padding: 16px 24px;
+  position: relative;
+  bottom: 93px;
+  width: 860px;
 }
 
 nav ul li {
   display: inline-block;
   list-style: none;
-  margin: 10px 20px;
+  margin: 10px 0;
   position: relative;
-  left: 300px;
+  left: 320px;
+  /* bottom: 30px; */
 }
 
 nav ul li a {
   text-decoration: none;
+  background: #463d3f;
   color: #ffdbda;
-  font-size: 16px;
+  font-size: 20px;
   position: relative;
+  padding: 10px 20px;
+}
+
+nav ul li a.active {
+  background: #6b5a5c;   /* lighter background when active */
+  color: #ffffff;         /* brighter font color when active */
+}
+
+nav ul li a:hover {
+  background: #5a4a4c;
+  color: #ffffff;
 }
 
 nav ul li a::after {
@@ -179,13 +195,29 @@ nav ul li a::after {
   bottom: -6px;
 }
 
-/* nav ul li a:hover::after {
-  width: 100%;
-  background: #ffdbda;
-  transition: 0.5s;
-} */
-
 .navlinks .tab-content {
   padding: 5px 10px 5px 0;
-  border-right: 1px solid #ffdbda; 
+  /* border-right: 1px solid #ffdbda;  */
+}
+
+.tab-panel {
+  display: none;
+}
+
+.tab-panel.active {
+  display: block;
+}
+
+/* =================== main container for the right side ========================== */
+.main-tabs {
+  background: #463d3f;
+  border: 1px solid #c2afb1;
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+  position: sticky;
+  top: 30px;
+  /* margin-bottom: 30px; */
+  height: 800px;
+  width: 860px;
 }
